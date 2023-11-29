@@ -1,4 +1,6 @@
-def valida_nome(nome):
+
+# Método responsável por retornar o valor do valid lá no arquivo Funcoes.py
+def valida_nome(nome, cad_nomes):
     if len(nome)==0:
         print('O campo não pode estar vazio!')
         return False
@@ -8,8 +10,14 @@ def valida_nome(nome):
     elif nome.isnumeric():
         print('Números não são permitidos!')
         return False
+    
+    # Vai verificar se o nome digitado já existe dentro do cadastro nome
+    elif nome in cad_nomes:
+        print('Desculpe, já existe um usuário cadastrado com esse nome')
+        return False
     else:
         return True
+
 
 def valida_idade(idade):
     if len(idade)==0:
@@ -23,6 +31,7 @@ def valida_idade(idade):
         return False
     else:
         return True
+
 
 def valida_fone(fone):
     if len(fone)==0:

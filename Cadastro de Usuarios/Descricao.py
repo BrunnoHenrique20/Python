@@ -6,6 +6,7 @@ def menu():
     print('C => Banco de Dados Usuários [ADM]')
     print('')
 
+
 def confere_dados(cad_ids,cad_nomes,cad_idades,cad_fones):
     print('')
     print('---Confirme abaixo se os dados estão corretos---')
@@ -19,6 +20,7 @@ def confere_dados(cad_ids,cad_nomes,cad_idades,cad_fones):
     print('C) => Editar Telefone')
     print('D) => Salvar')
     print('')
+    
 
 def consulta_usuarios():
     print('-'*50)
